@@ -1,13 +1,13 @@
-name: Ping every 20 minutes
+name: Ping every 15 minutes
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
   schedule:
-  - cron: "*/20 * * * *"
+    - cron: "*/15 * * * *"
 
 jobs:
   ping:
     runs-on: ubuntu-latest
-  steps:
-    - name: Ping URL
-    run: echo "Hello from Github Actions"
+    steps:
+      - name: Test step
+        run: echo "Yaml and cron mastered"
