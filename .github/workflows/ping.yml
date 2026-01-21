@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping MementoMori API
-        run: curl -s -o /dev/null -w "%{http_code}" "${{ secrets.API_TOKEN }}")
+        run: curl -s -o /dev/null -w "%{http_code}" "${{ secrets.API_TOKEN }}"
