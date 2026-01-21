@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping MementoMori API
-        run: curl -s -o /dev/null -w "%{http_code}" "https://mementomori-api.onrender.com/api/wallpaper?token=eyJiaXJ0aERhdGUiOiIxOTk2LTAxLTIxIiwibGlmZUV4cGVjdGFuY3kiOjc3LCJkZXZpY2UiOiJpcGhvbmUtMTUtcHJvIiwic2hhcGUiOiJjaXJjbGUiLCJ3aWRnZXRQb3NpdGlvbiI6Im5vbmUiLCJ0aGVtZSI6ImxpZ2h0Iiwic2hvd0xhYmVscyI6ZmFsc2V9"
+        run: curl -s -o /dev/null -w "%{http_code}" "${{ secrets.API_TOKEN }}")
